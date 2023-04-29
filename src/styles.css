@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+.contact-us{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: small;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
