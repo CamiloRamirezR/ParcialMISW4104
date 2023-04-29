@@ -19,8 +19,30 @@ export class PlantaListComponent implements OnInit {
     });
   }
 
+  contadorPlantasInterior(): number {
+    let count: number = 0;
+    for (let i = 0; i < this.plantas.length; i++) {
+      if (this.plantas[i].tipo === 'Interior'){
+        count++;
+      }
+    }
+    return count;
+  }
+
+  contadorPlantasExterior(): number {
+    let count: number = 0;
+    for (let i = 0; i < this.plantas.length; i++) {
+      if (this.plantas[i].tipo === 'Exterior'){
+        count++;
+      }
+    }
+    return count;
+  }
+
   ngOnInit() {
     this.getPlantas();
   }
+
+
 
 }
