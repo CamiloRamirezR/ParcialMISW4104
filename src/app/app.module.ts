@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -13,7 +14,8 @@ import { PlantaListComponent } from './planta/planta-list/planta-list.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PlantaModule
+    PlantaModule,
+    HttpClientModule
   ],
   exports: [PlantaListComponent],
   providers: [],
